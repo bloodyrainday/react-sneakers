@@ -4,8 +4,6 @@ import Card from "../components/Card/Card";
 import Skeleton from "../components/Skeleton";
 import SearchContext from "../context";
 
-import searchIcon from "../../public/images/search-icon.svg";
-
 const MainContent = () => {
   const {
     sneakers,
@@ -28,7 +26,11 @@ const MainContent = () => {
           </h1>
 
           <div className="content__search">
-            <img className="content__icon" src={searchIcon} alt="search" />
+            <img
+              className="content__icon"
+              src="../images/search-icon.svg"
+              alt="search"
+            />
             <input
               className="content__input"
               placeholder="search..."
