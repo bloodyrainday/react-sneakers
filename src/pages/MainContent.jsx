@@ -28,7 +28,7 @@ const MainContent = () => {
           <div className="content__search">
             <img
               className="content__icon"
-              src="../images/search-icon.svg"
+              src="images/search-icon.svg"
               alt="search"
             />
             <input
