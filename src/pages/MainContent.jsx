@@ -22,13 +22,13 @@ const MainContent = () => {
       <div className="container content__container">
         <div className="content__top-wrapper">
           <h1 className="content__title">
-            {searchValue ? `Поиск по запросу ${searchValue}` : "All sneakers"}
+            {searchValue ? `Looking for ${searchValue}` : "All sneakers"}
           </h1>
 
           <div className="content__search">
             <img
               className="content__icon"
-              src="./images/search-icon.svg"
+              src="images/search-icon.svg"
               alt="search"
             />
             <input
