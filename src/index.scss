@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+body {
+  background-color: #e7f6ff;
+  padding: 85px 85px 0 85px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 60px;
+}
+
+.header {
+  padding: 43px 0 44px 0;
+  border-bottom: 1px solid #eaeaea;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 16px;
+    width: 270px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+}
+
+.nav {
+  align-content: center;
+  &__list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
+
+.content {
+  padding: 40px 0;
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__search {
+    width: 250px;
+    height: 45px;
+    border: 2px solid #767676;
+    padding: 0 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+
+    span {
+      position: absolute;
+      font-weight: 600;
+      right: 15px;
+      cursor: pointer;
+      border: 2px solid grey;
+      padding: 0 3px;
+    }
+  }
+
+  &__input {
+    width: 200px;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #535353;
+    outline: none;
+  }
+
+  &__sneakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+.burger {
+  display: none;
+  position: relative;
+  top: 5px;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1009;
+
+  span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: grey;
+    transition: 0.5s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 35px;
+      height: 2px;
+      background-color: grey;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 35px;
+      height: 2px;
+      background-color: grey;
+      transition: 0.5s;
+    }
+  }
+
+  &.clicked {
+    position: relative;
+    bottom: 20px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: white;
+      transform: rotate(-45deg);
+      transition: 0.5s;
+      bottom: 20px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 10px;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transform: rotate(90deg);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .content__sneakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content__sneakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 920px) {
+  .nav__list {
+    display: none;
+    align-items: center;
+  }
+
+  .header__container {
+    align-items: center;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 920px) {
+  .content__top-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
