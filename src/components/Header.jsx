@@ -17,7 +17,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
   return (
     <header className="header">
       <div className="container header__container">
-        <Link to="/">
+        <Link to="react-sneakers">
           <div className="header__logo">
             <img
               className="header__svg"
