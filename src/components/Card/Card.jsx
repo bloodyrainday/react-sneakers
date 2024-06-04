@@ -35,8 +35,8 @@ const Card = ({
           className={`${styles.card__icon}`}
           src={`require(${
             favoriteItems.some((item) => item.id === id)
-              ? "images/fav-icon-clicked.svg"
-              : "images/fav-icon.svg"
+              ? "./images/fav-icon-clicked.svg"
+              : "./images/fav-icon.svg"
           })`}
           alt="fav-icon"
           onClick={() => {
