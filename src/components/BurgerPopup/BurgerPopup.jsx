@@ -56,7 +56,7 @@ const BurgerPopup = ({
             <span>{countTotalPrice} $.</span>
           </li>
 
-          <Link to="fav" onClick={() => setIsBurger(false)}>
+          <Link to="react-sneakers/fav" onClick={() => setIsBurger(false)}>
             <li className={styles.burger__item}>
               <svg
                 width="19"
@@ -81,7 +81,7 @@ const BurgerPopup = ({
             </li>
           </Link>
 
-          <Link to="orders" onClick={() => setIsBurger(false)}>
+          <Link to="react-sneakers/orders" onClick={() => setIsBurger(false)}>
             <li
               className={styles.burger__item}
               onClick={() => console.log("orders that you made", orderedItems)}
