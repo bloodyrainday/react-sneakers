@@ -28,7 +28,7 @@ function App() {
     }
 
     fetchData();
-  }, [cartItems, favoriteItems]);
+  }, []);
 
   const [openedCart, setOpenedCart] = React.useState(false);
 
@@ -101,8 +101,8 @@ function App() {
         />
         <Routes>
           <Route path="react-sneakers" element={<MainContent />}></Route>
-          <Route path="fav" element={<Favorites />}></Route>
-          <Route path="orders" element={<Orders />}></Route>
+          <Route path="react-sneakers/fav" element={<Favorites />}></Route>
+          <Route path="react-sneakers/orders" element={<Orders />}></Route>
         </Routes>
       </div>
     </SearchContext.Provider>
