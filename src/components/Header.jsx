@@ -62,7 +62,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
               <span>{countTotalPrice} $.</span>
             </li>
 
-            <Link to="react-sneakers/fav">
+            <Link to="./fav">
               <li className="nav__item">
                 <svg
                   width="19"
@@ -87,7 +87,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
               </li>
             </Link>
 
-            <Link to="react-sneakers/orders">
+            <Link to="./orders">
               <li
                 className="nav__item"
                 onClick={() =>
