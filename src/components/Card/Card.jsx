@@ -51,11 +51,7 @@ const Card = ({
         />
       )}
 
-      <img
-        className={styles.card__img}
-        src={`require(${img})`}
-        alt="sneakers"
-      />
+      <img className={styles.card__img} src={img} alt="sneakers" />
       <h4>{title}</h4>
       <div className={styles.card__desc}>
         <div>
