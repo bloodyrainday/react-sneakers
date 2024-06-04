@@ -226,6 +226,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
   .header__text {
     display: none;
   }
