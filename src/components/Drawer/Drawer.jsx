@@ -27,7 +27,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
         <div className={styles.drawer__header}>
           <h3 className={styles.drawer__title}>CART</h3>
           <img
-            src="images/close-btn.svg"
+            src="react-sneakers/images/close-btn.svg"
             alt="close-btn"
             onClick={onCloseCart}
           />
@@ -37,7 +37,9 @@ const Drawer = ({ onCloseCart, openedCart }) => {
           <Info
             onCloseCart={onCloseCart}
             img={
-              ordered ? "images/completed-order.svg" : "images/empty-cart.svg"
+              ordered
+                ? "react-sneakers/images/completed-order.svg"
+                : "react-sneakers/images/empty-cart.svg"
             }
             title={
               ordered
@@ -65,7 +67,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
                     </div>
                     <img
                       className={styles.drawer__close_btn}
-                      src="images/close-btn.svg"
+                      src="react-sneakers/images/close-btn.svg"
                       alt="close-btn"
                       onClick={() => removeSneakersFromCart(item.id)}
                     />
@@ -93,7 +95,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
               onClick={() => makeOrder(cartItems)}
             >
               confirm the order
-              <img src="images/arrow.svg" alt="arrow" />
+              <img src="react-sneakers/images/arrow.svg" alt="arrow" />
             </button>
           </>
         )}

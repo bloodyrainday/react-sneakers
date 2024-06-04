@@ -17,9 +17,13 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
   return (
     <header className="header">
       <div className="container header__container">
-        <Link to="./react-sneakers">
+        <Link to="./">
           <div className="header__logo">
-            <img className="header__svg" src="images/image4.svg" alt="logo" />
+            <img
+              className="header__svg"
+              src="react-sneakers/images/image4.svg"
+              alt="logo"
+            />
             <div className="header__text">
               <h3 className="header__title">REACT SNEAKERS</h3>
               <p className="header__subtitle">the best sneaker store</p>

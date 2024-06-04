@@ -99,7 +99,7 @@ function App() {
           countTotalPrice={countTotalPrice}
         />
         <Routes>
-          <Route path="./react-sneakers" element={<MainContent />}></Route>
+          <Route path="./" element={<MainContent />}></Route>
           <Route path="./fav" element={<Favorites />}></Route>
           <Route path="./orders" element={<Orders />}></Route>
         </Routes>

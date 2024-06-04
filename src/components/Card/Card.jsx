@@ -35,8 +35,8 @@ const Card = ({
           className={`${styles.card__icon}`}
           src={
             favoriteItems.some((item) => item.id === id)
-              ? "images/fav-icon-clicked.svg"
-              : "images/fav-icon.svg"
+              ? "react-sneakers/images/fav-icon-clicked.svg"
+              : "react-sneakers/images/fav-icon.svg"
           }
           alt="fav-icon"
           onClick={() => {
@@ -65,8 +65,8 @@ const Card = ({
             className={styles.card__btn}
             src={
               cartItems.some((item) => item.id === id)
-                ? `images/add-btn-clicked.svg`
-                : `images/add-btn.svg`
+                ? `react-sneakers/images/add-btn-clicked.svg`
+                : `react-sneakers/images/add-btn.svg`
             }
             alt="add-btn"
             onClick={() => {
