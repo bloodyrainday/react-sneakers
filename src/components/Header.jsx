@@ -17,7 +17,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
   return (
     <header className="header">
       <div className="container header__container">
-        <Link to="./">
+        <Link to="/">
           <div className="header__logo">
             <img
               className="header__svg"
@@ -66,7 +66,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
               <span>{countTotalPrice} $.</span>
             </li>
 
-            <Link to="./fav">
+            <Link to="fav">
               <li className="nav__item">
                 <svg
                   width="19"
@@ -91,7 +91,7 @@ const Header = ({ onClickCart, orderedItems, countTotalPrice }) => {
               </li>
             </Link>
 
-            <Link to="./orders">
+            <Link to="orders">
               <li
                 className="nav__item"
                 onClick={() =>
