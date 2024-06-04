@@ -224,3 +224,18 @@ body {
     gap: 25px;
   }
 }
+
+@media (max-width: 600px) {
+  .header__text {
+    display: none;
+  }
+
+  .header__logo {
+    width: 100%;
+  }
+
+  .content__search,
+  .content__input {
+    width: 100%;
+  }
+}
