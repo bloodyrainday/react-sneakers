@@ -99,9 +99,9 @@ function App() {
           countTotalPrice={countTotalPrice}
         />
         <Routes>
-          <Route path="" element={<MainContent />}></Route>
-          <Route path="fav" element={<Favorites />}></Route>
-          <Route path="orders" element={<Orders />}></Route>
+          <Route path="/" element={<MainContent />}></Route>
+          <Route path="/fav" element={<Favorites />}></Route>
+          <Route path="/orders" element={<Orders />}></Route>
         </Routes>
       </div>
     </SearchContext.Provider>

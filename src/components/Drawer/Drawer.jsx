@@ -39,7 +39,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
             img={
               ordered
                 ? "react-sneakers/images/completed-order.svg"
-                : "images/empty-cart.svg"
+                : "react-sneakers/images/empty-cart.svg"
             }
             title={
               ordered
@@ -67,7 +67,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
                     </div>
                     <img
                       className={styles.drawer__close_btn}
-                      src="images/close-btn.svg"
+                      src="react-sneakers/images/close-btn.svg"
                       alt="close-btn"
                       onClick={() => removeSneakersFromCart(item.id)}
                     />
