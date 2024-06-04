@@ -12,6 +12,7 @@ import axios from "axios";
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
+  const [sneakers, setSneakers] = React.useState([]);
   React.useEffect(() => {
     async function fetchData() {
       setIsLoading(true);
@@ -24,9 +25,8 @@ function App() {
     }
 
     fetchData();
-  }, []);
+  }, [sneakers]);
 
-  const [sneakers, setSneakers] = React.useState([]);
   const [openedCart, setOpenedCart] = React.useState(false);
 
   console.log("the drawer is opened", openedCart);
