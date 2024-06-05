@@ -32,7 +32,12 @@ function App() {
 
   const [openedCart, setOpenedCart] = React.useState(false);
 
+  openedCart
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "inherit");
+
   console.log("the drawer is opened", openedCart);
+
   const [orderedItems, setOrderedItems] = React.useState([]);
   const [searchValue, setSearchValue] = React.useState("");
 

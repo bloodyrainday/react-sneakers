@@ -85,7 +85,7 @@ const Drawer = ({ onCloseCart, openedCart }) => {
               <li>
                 <span>TAX 5%:</span>
                 <div></div>
-                <b>{(countTotalPrice * 0.05).toFixed(2)} руб. </b>
+                <b>{(countTotalPrice * 0.05).toFixed(2)} $. </b>
               </li>
             </ul>
             <button
