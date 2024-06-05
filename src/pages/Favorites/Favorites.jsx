@@ -17,19 +17,27 @@ const Favorites = () => {
       <div className="container favorites__container">
         <h1 className={styles.favorites__title}>your favorites</h1>
         <ul className={styles.favorites__list}>
-          {favoriteItems.map((item, index) => {
-            return (
-              <Card
-                {...item}
-                key={`${item}__${index}`}
-                addSneakersToCart={addSneakersToCart}
-                addSneakersToFavorite={addSneakersToFavorite}
-                sneakers={item}
-                favorite={true}
-                removeSneakersFromFavorites={removeSneakersFromFavorites}
-              />
-            );
-          })}
+          {favoriteItems.length === 0 ? (
+            favoriteItems.map((item, index) => {
+              return (
+                <Card
+                  {...item}
+                  key={`${item}__${index}`}
+                  addSneakersToCart={addSneakersToCart}
+                  addSneakersToFavorite={addSneakersToFavorite}
+                  sneakers={item}
+                  favorite={true}
+                  removeSneakersFromFavorites={removeSneakersFromFavorites}
+                />
+              );
+            })
+          ) : (
+            <h3
+              style={{ width: "100vh", fontSize: "30px", textAlign: "center" }}
+            >
+              currently this page is empty
+            </h3>
+          )}
         </ul>
       </div>
     </section>
