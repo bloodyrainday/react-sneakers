@@ -13,11 +13,14 @@ const Favorites = () => {
     addSneakersToFavorite,
   } = React.useContext(SearchContext);
   return (
-    <section className={styles.favorites}>
+    <section
+      className={styles.favorites}
+      style={{ height: `${favoriteItems.length !== 0 ? "100%" : "100vh"}` }}
+    >
       <div className="container favorites__container">
         <h1 className={styles.favorites__title}>your favorites</h1>
         <ul className={styles.favorites__list}>
-          {favoriteItems.length === 0 ? (
+          {favoriteItems.length !== 0 ? (
             favoriteItems.map((item, index) => {
               return (
                 <Card
